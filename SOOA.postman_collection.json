@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "855958a4-5a68-4cae-ac9d-a37757235993",
+		"name": "SOOA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15515429"
+	},
+	"item": [
+		{
+			"name": "Register subject",
+			"item": [
+				{
+					"name": "Register subject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"student_id\": \"{{student_id}}\",\n    \"course_id\": \"{{course_id}}\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/register-subject",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register-subject"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Course",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/register-subject/course/{{course_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register-subject",
+								"course",
+								"{{course_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Student courses",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/register-subject/student/{{student_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register-subject",
+								"student",
+								"{{student_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unregister subject",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/register-subject/{{student_id}}/{{course_id}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register-subject",
+								"{{student_id}}",
+								"{{course_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "string"
+		},
+		{
+			"key": "student_id",
+			"value": "degarzonm",
+			"type": "string"
+		},
+		{
+			"key": "course_id",
+			"value": "6339967e4774d155f6b215d9",
+			"type": "string"
+		}
+	]
+}
