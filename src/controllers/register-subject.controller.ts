@@ -34,7 +34,8 @@ export class RegisterSubjectController {
     return await this.registerSubjectService.findOneStudent(student_id);
   }
 
-  @Delete(':student_id/:course_id')
+  //@Delete(':student_id/:course_id')
+  @Get('delete/:student_id/:course_id')
   async unregisterCourse(
     @Param('student_id') student_id: string,
     @Param('course_id') course_id: string,
