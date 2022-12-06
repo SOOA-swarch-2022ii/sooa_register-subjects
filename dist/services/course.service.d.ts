@@ -11,7 +11,6 @@ export declare class CourseService {
     update(id: string, updateCourseDto: CourseDto): Promise<Course>;
     delete(id: string): Promise<Course>;
     courseExists(data: RegisterCourseDto): Promise<boolean>;
-    courseExistsDataBase(data: String): Promise<boolean>;
     studentIsRegistered(data: RegisterCourseDto): Promise<boolean>;
     courseHasPlaces(data: RegisterCourseDto): Promise<boolean>;
     hasScheduleAvailable(data: RegisterCourseDto): Promise<boolean>;

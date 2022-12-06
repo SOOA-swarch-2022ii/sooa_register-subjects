@@ -8,7 +8,7 @@ import { RegisterSubjectModule } from './modules/register-subject.module';
   imports: [
     RegisterSubjectModule,
     MongooseModule.forRoot(
-      'mongodb+srv://sooa_mongo_admin:CbfRdzY1dULYKIiE@sooa-mongo-cluster.lrlq0px.mongodb.net/SOOA_subjects_db?retryWrites=true&w=majority',
+      'mongodb+srv://sooa_mongo_admin:4MbzZzD9ykOMrvLo@sooa-mongo-cluster.lrlq0px.mongodb.net/SOOA_subjects_db?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],

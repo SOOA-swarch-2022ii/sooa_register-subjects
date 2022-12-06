@@ -25,14 +25,6 @@ let CourseService = class CourseService {
         return await this.model.find().exec();
     }
     async findOne(id) {
-        console.log("COMO VAS " + id);
-        const course = await this.model.findById(id).exec();
-        if (course !== null) {
-            console.log("SI EXISTOOOO");
-        }
-        else {
-            console.log("NO EXISTO");
-        }
         return await this.model.findById(id).exec();
     }
     async create(createCourseDto) {
@@ -48,14 +40,6 @@ let CourseService = class CourseService {
         let courseExists = null;
         try {
             courseExists = await this.model.findById(data.course_id).exec();
-        }
-        catch (e) { }
-        return courseExists !== null;
-    }
-    async courseExistsDataBase(data) {
-        let courseExists = null;
-        try {
-            courseExists = await this.model.findById(data).exec();
         }
         catch (e) { }
         return courseExists !== null;

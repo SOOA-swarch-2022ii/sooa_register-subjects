@@ -18,7 +18,7 @@ AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
             register_subject_module_1.RegisterSubjectModule,
-            mongoose_1.MongooseModule.forRoot('mongodb+srv://sooa_mongo_admin:CbfRdzY1dULYKIiE@sooa-mongo-cluster.lrlq0px.mongodb.net/SOOA_subjects_db?retryWrites=true&w=majority'),
+            mongoose_1.MongooseModule.forRoot('mongodb+srv://sooa_mongo_admin:4MbzZzD9ykOMrvLo@sooa-mongo-cluster.lrlq0px.mongodb.net/SOOA_subjects_db?retryWrites=true&w=majority'),
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
